@@ -1,0 +1,280 @@
+<!doctype html>
+
+<html>
+   <head>
+   	<style >
+   		
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** { 
+  outline: 1px solid black;
+}*/
+
+#header_buttons {
+    text-align: right;
+    padding-top: 10px;
+}
+#header_buttons a:hover{text-decoration: underline;}
+#header_buttons li, a {
+    color: gray;
+    text-decoration: none;
+    display: inline;
+    list-style: none;
+    padding: 4px;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+
+#sign_in {
+    display: inline-block;
+    margin: 3px 8px;
+    border-radius: 3px;
+    background-color: #29A0F0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+li#sign_in {
+    display: block;
+    margin-bottom: 100px;
+}
+
+#sign_in:hover{box-shadow: 0px 1px 0px 0px #e6e6e6;}
+#sign_in a {
+    margin: 0 auto;
+/*        border:1px solid black;
+*/
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#sign-in-text {
+    margin-top: 20px;
+}
+
+div#header_buttons ul li#sign_in {
+    display: inline-block;
+    width: 70px;
+    height: 15px;
+/*    border: 1px solid black;
+*/    text-align: center;
+    margin-bottom: 25px;
+}
+
+#apps a {
+    width: 60px;
+    background-position: center;
+    background-image: url("images.grid.png");
+/*    border: 1px solid black;
+*/}
+
+#sign_in a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+#google_logo {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+#google_logo > img{
+    display: block;
+    margin: 0 auto;
+}
+#google_logo {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#query {
+    width: 572px;
+    margin: auto;
+}
+#query > input {
+    width:572px;
+    height:30px;
+    margin: auto;
+    background-image: url("images/microphone.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#query input[type="text"] {
+font-size: 17px;
+}
+
+.buttons {
+    width: 572px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+button#search {
+    margin-top: 10px;
+    font: bold 11px Arial, sans-serif !important;
+    width: 95px;
+    height: 30px;
+    -webkit-border-radius: 0px;
+}
+button#lucky {
+    font: bold 11px Arial, sans-serif !important;
+    width: 110px;
+    height: 30px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 15px;
+    width: 100%;
+/*    border: 1px solid black;
+*/    background-color: #e3e3e3;
+}
+
+
+
+
+#footer-left ul li{
+    float: left;
+/*    border:1px solid black;
+*/    display: inline;
+    padding: 5px 3px;
+    padding-top: 14px;
+    vertical-align: bottom;
+}
+
+
+#footer-left ul li a{
+/*        border:1px solid black;
+*/
+    padding: 30px 8px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+}
+
+#footer-right ul li
+{
+    float: right;
+    display: inline;
+    padding: 30px 8px;
+    padding-top: 14px;
+    vertical-align: bottom;
+}
+
+
+#footer-right ul li a{
+    padding: 30px 8px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+}
+#google_logo 
+ {
+  margin-left: 650px;
+  width: 600px;
+  height: 200px;
+  background-color: coral;
+  animation: square-to-circle 2s infinite alternate;
+}
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:coral;
+ 
+  }
+  50%  {
+    border-radius:10% 10% 10% 10%;
+    background:darksalmon;
+    
+  }
+  50%  {
+    border-radius:25% 25% 25% 25%;
+    background:indianred;
+    
+  }
+  75%  { 
+    border-radius:40% 40% 40% 40%;
+    background:lightcoral;
+  }
+  100% {  
+    border-radius:50%;
+    background:darksalmon;
+  }
+}
+
+
+   	</style>
+      <meta charset="UTF-8">
+      <title>Google</title>
+      <link rel="stylesheet" type="text/css" href="main.css">
+   </head>
+   <body>
+      <div id="header_buttons">
+         <ul>
+         	<li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
+            <li class="nav-links"><a href="#">Images</a></li>
+            <li id="sign_in"><a href="#">Sign In</a></li>
+            
+            </li>
+         </ul>
+      </div>
+      <div id="google_logo">
+         <img src="https://www.google.com/images/srpr/logo11w.png">
+      </div>
+      <div id=query>
+         <input type="text"></input>
+      </div>
+      <div class="buttons">
+         <button  type="submit" value="Submit" id="search">Google Search</button>
+         <button id="lucky">I'm Feeling Lucky</button>
+      </div>
+      <div id="footer">
+         <div id="footer-left">
+            <ul>
+               <li><a href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a></li>
+               <li><a>Business</a></li>
+               <li><a>About</a></li>
+            </ul>
+         </div>
+         <div id="footer-right">
+            <ul>
+                               <li><a>Privacy & Terms</a></li>
+                  <li><a>Settings</a></li>
+            </ul>
+         </div>
+      </div>
+   </body>
+</html>
+
